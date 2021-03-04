@@ -12,7 +12,6 @@ public class ConsumerAndProductor {
         consumerAndProductor.consumer();
         consumerAndProductor.producer();
         consumerAndProductor.producer();
-        System.out.println("11111");
     }
     private void producer(){
         new Thread(()->{
