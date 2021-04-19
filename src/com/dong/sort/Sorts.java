@@ -1,7 +1,7 @@
 package com.dong.sort;
 
 public class Sorts {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         int[] nums = new int[]{1,2,3,4 ,10,3,9,7,8,5};
         Sorts sorts = new Sorts();
         //sorts.BubbleSort(nums);
@@ -10,9 +10,11 @@ public class Sorts {
         //sorts.MergeSort(nums);
         //sorts.QuickSort(nums);
         sorts.HeapSort(nums);
+
         for(int num:nums){
             System.out.println(num);
         }
+        Thread.sleep(10000);
     }
     private void BubbleSort(int[] nums){
         int len = nums.length;
